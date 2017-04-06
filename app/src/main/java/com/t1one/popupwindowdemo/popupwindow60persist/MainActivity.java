@@ -33,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
             mPop.getWindow().showAsDropDown(mShowPopupWindow);
         }
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mPop != null) {
+            mPop.getWindow().dismiss();
+        }
+    }
+
     /**
      * 退出程序
      */
