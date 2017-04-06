@@ -55,15 +55,15 @@ public class SelectCityPop implements OnClickListener {
             public void onDismiss() {
             }
         });
-        window.setTouchInterceptor(new View.OnTouchListener() {
-            public boolean onTouch(View v, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_OUTSIDE) {
-                    window.dismiss();
-                    return true;
-                }
-                return false;
-            }
-        });
+//        window.setTouchInterceptor(new View.OnTouchListener() {
+//            public boolean onTouch(View v, MotionEvent event) {
+//                if (event.getAction() == MotionEvent.ACTION_OUTSIDE) {
+//                    window.dismiss();
+//                    return true;
+//                }
+//                return false;
+//            }
+//        });
     }
 
     /**
